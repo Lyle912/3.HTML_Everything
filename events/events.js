@@ -9,8 +9,9 @@ function addParagraph() {
     paragraph.setAttribute("id", "buttonPar")
     paragraph.appendChild(document.createTextNode("How you doing?"))
     button.after(paragraph)
+    return
   }
-  else document.getElementById("buttonPar").remove()
+  document.getElementById("buttonPar").remove()
 }
 
 document.addEventListener("keypress", callback)
@@ -19,3 +20,13 @@ function callback(event){
   if(event.code ==="Equal") addParagraph()
   if(event.code ==="KeyX") button.removeEventListener('click', addParagraph)
 }
+
+var letsGo = document.querySelector(".special")
+var articleGo = document.querySelector("article")
+letsGo.addEventListener("click", function(){
+  alert("test")
+}, true)
+
+articleGo.addEventListener("click",function(){
+  alert("i went first")
+},true)

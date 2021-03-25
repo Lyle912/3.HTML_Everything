@@ -1,0 +1,94 @@
+body {
+  font-family: Arial;
+}
+
+.nav_bar {
+  background-color: rgb(63, 62, 63);
+  height: 50px;
+  padding-top: 15px;
+  margin-bottom: 25px;
+  color: white; 
+}
+
+.link{
+  color:white;
+  margin-left: 10px
+}
+
+.link:link {
+  text-decoration: none;
+}
+
+.link:visited {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  text-decoration: underline;
+}
+
+.search_form{
+float: right; 
+padding-right: 20px;
+height: 40px;
+}
+
+.search_input{
+  height: 30px;
+}
+
+.search_Button{
+  border-color: orange;
+  border-radius: 4px;
+  color:orange;
+  height: 40px;
+  width: 80px;
+  background-color: rgb(63, 62, 63);
+}
+
+.page_header, .link{
+float:left;
+margin:7px;
+padding-right: 10px;
+padding-left: 20px;
+}
+
+/* login page */
+.login {
+  text-align: center;
+}
+
+.login_form {
+width: 30%;
+margin: auto;
+text-align:left;
+}
+
+.login_input{
+width: 100%;
+display: inline-block;
+margin-bottom: 10px;
+}
+
+.login_Button{
+  background-color: blue;
+  color:white;
+  height: 40px;
+  width: 80px;
+}
+
+/* movie page */
+.grid-wrapper{
+  display:grid;
+  width: 90%;
+  grid-template: repeat(3, 1fr)/repeat(4, 1fr);
+}
+
+img{
+  width: 50%;
+  height: auto;
+}
